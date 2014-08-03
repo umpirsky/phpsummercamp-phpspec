@@ -8,6 +8,11 @@
     "config": {
         "bin-dir": "bin"
     },
+    "autoload": {
+        "psr-0": {
+            "PHPSpecWorkshop\\": "src/"
+        }
+    },
     "license": "MIT",
     "authors": [
         {
