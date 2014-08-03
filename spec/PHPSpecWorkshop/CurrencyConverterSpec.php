@@ -21,4 +21,9 @@ class CurrencyConverterSpec extends ObjectBehavior
     {
         $this->convert(80, 'HRK')->shouldReturn(10.4);
     }
+
+    function it_throws_exception_if_currency_is_not_supported()
+    {
+        $this->shouldThrow('InvalidArgumentException')->duringConvert(54, 'RSD');
+    }
 }

@@ -10,6 +10,13 @@ class CurrencyConverter implements CurrencyConverterInterface
 
     public function convert($value, $currency)
     {
+        if (!isset($this->rates[$currency])) {
+            throw new \InvalidArgumentException(sprintf(
+                'Currency "%s" is not supported.',
+                $currency
+            ));
+        }
+
         return $value * $this->rates[$currency];
     }
 }
