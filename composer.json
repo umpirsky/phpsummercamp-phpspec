@@ -1,0 +1,24 @@
+{
+    "name": "umpirsky/phpspec-workshop",
+    "description": "PHPSpec workshop",
+    "require": {
+        "php": ">=5.5",
+        "phpspec/phpspec": "~2.0",
+        "twig/twig": "~1.16"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-0": {
+            "PHPSpecWorkshop\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "umpirsky",
+            "email": "umpirsky@gmail.com"
+        }
+    ]
+}
