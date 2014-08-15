@@ -4,5 +4,5 @@ namespace PHPSpecWorkshop;
 
 interface CurrencyConverterInterface
 {
-    //public function convert($value, $currency);
+    public function convert($value, $currency);
 }

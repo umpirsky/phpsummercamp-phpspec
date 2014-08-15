@@ -3,7 +3,8 @@
     "description": "PHPSpec workshop",
     "require": {
         "php": ">=5.5",
-        "phpspec/phpspec": "~2.0"
+        "phpspec/phpspec": "~2.0",
+        "twig/twig": "~1.16"
     },
     "config": {
         "bin-dir": "bin"

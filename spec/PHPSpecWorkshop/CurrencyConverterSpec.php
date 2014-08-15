@@ -19,7 +19,7 @@ class CurrencyConverterSpec extends ObjectBehavior
 
     function it_converts_currencies()
     {
-        $this->convert(80, 'HRK')->shouldReturn(10.4);
+        $this->convert(80, 'HRK')->shouldReturn(612.0);
     }
 
     function it_throws_exception_if_currency_is_not_supported()

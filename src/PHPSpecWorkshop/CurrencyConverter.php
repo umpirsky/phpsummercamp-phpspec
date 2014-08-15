@@ -5,7 +5,7 @@ namespace PHPSpecWorkshop;
 class CurrencyConverter implements CurrencyConverterInterface
 {
     private $rates = [
-        'HRK' => 0.13
+        'HRK' => 7.65
     ];
 
     public function convert($value, $currency)
