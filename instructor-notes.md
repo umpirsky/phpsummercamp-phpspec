@@ -11,4 +11,3 @@ Here's the high-level plan:
 ### TODO:
 
  - Show `Prophecy\Argument` example.
- - Show callback matcher.
