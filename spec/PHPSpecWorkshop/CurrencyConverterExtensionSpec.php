@@ -32,6 +32,7 @@ class CurrencyConverterExtensionSpec extends ObjectBehavior
     {
         $filters = $this->getFilters();
 
+        $filters->shouldBeArray();
         $filters->shouldHaveCount(1);
         $filters->shouldContainCurrencyFilter();
     }
