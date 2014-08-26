@@ -15,7 +15,10 @@ class CurrencyConverterExtension extends \Twig_Extension
 
     public function getFilters()
     {
-        return [new \Twig_SimpleFilter('currency', [$this, 'currencyFilter'])];
+        return [
+            new \Twig_SimpleFilter('currency', [$this, 'currencyFilter']),
+            new \Twig_SimpleFilter('price', [$this, 'priceFilter']),
+        ];
     }
 
     public function getName()
@@ -25,9 +28,14 @@ class CurrencyConverterExtension extends \Twig_Extension
 
     public function currencyFilter($value, $currency)
     {
-        return $this->formatter->formatCurrency(
+        return $this->priceFilter(
             $this->converter->convert($value, $currency),
             $currency
         );
+    }
+
+    public function priceFilter($value, $currency)
+    {
+        return $this->formatter->formatCurrency($value, $currency);
     }
 }
