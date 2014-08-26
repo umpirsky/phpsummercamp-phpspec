@@ -29,8 +29,7 @@ class CurrencyConverterExtensionSpec extends ObjectBehavior
 
         $filters->shouldBeArray();
         $filters->shouldHaveCount(1);
-        $filters[0]->shouldHaveType('Twig_SimpleFilter');
-        $filters[0]->getName()->shouldReturn('currency');
+        $filters->shouldContainCurrencyFilter();
     }
 
     function it_converts_currencies($converter)
@@ -38,5 +37,16 @@ class CurrencyConverterExtensionSpec extends ObjectBehavior
         $converter->convert(80, 'USD')->shouldBeCalled()->willReturn(104.121354);
 
         $this->currencyFilter(80, 'USD')->shouldReturn('$104.12');
+    }
+
+    public function getMatchers()
+    {
+        return [
+            'containCurrencyFilter' => function($subject) {
+                $filter = $subject[0];
+
+                return $filter instanceof \Twig_SimpleFilter && 'currency' === $filter->getName();
+            }
+        ];
     }
 }
