@@ -10,7 +10,7 @@ class CurrencyConverterExtensionSpec extends ObjectBehavior
 {
     function let(CurrencyConverterInterface $converter)
     {
-        $this->beConstructedWith($converter);
+        $this->beConstructedWith($converter, 'en_US');
     }
 
     function it_is_initializable()

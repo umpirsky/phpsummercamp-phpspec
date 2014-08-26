@@ -7,10 +7,10 @@ class CurrencyConverterExtension extends \Twig_Extension
     private $converter;
     private $formatter;
 
-    public function __construct(CurrencyConverterInterface $converter)
+    public function __construct(CurrencyConverterInterface $converter, $locale = null)
     {
         $this->converter = $converter;
-        $this->formatter = new \NumberFormatter(\Locale::getDefault(), \NumberFormatter::CURRENCY);
+        $this->formatter = new \NumberFormatter($locale, \NumberFormatter::CURRENCY);
     }
 
     public function getFilters()
