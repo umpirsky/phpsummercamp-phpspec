@@ -12,6 +12,11 @@ class CurrencyConverterSpec extends ObjectBehavior
         $this->shouldHaveType('PHPSpecWorkshop\CurrencyConverter');
     }
 
+    function it_implements_currency_converter_interface()
+    {
+        $this->shouldImplement('PHPSpecWorkshop\CurrencyConverterInterface');
+    }
+
     function it_converts_currencies()
     {
         $this->convert(80, 'HRK')->shouldReturn(610.4);
