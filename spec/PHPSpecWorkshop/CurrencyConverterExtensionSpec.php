@@ -35,8 +35,8 @@ class CurrencyConverterExtensionSpec extends ObjectBehavior
 
     function it_converts_currencies($converter)
     {
-        $converter->convert(80, 'USD')->shouldBeCalled()->willReturn(104.0);
+        $converter->convert(80, 'USD')->shouldBeCalled()->willReturn(104.121354);
 
-        $this->currencyFilter(80, 'USD')->shouldReturn('104 USD');
+        $this->currencyFilter(80, 'USD')->shouldReturn('$104.12');
     }
 }

@@ -5,10 +5,12 @@ namespace PHPSpecWorkshop;
 class CurrencyConverterExtension extends \Twig_Extension
 {
     private $converter;
+    private $formatter;
 
     public function __construct(CurrencyConverterInterface $converter)
     {
         $this->converter = $converter;
+        $this->formatter = new \NumberFormatter(\Locale::getDefault(), \NumberFormatter::CURRENCY);
     }
 
     public function getFilters()
@@ -23,6 +25,9 @@ class CurrencyConverterExtension extends \Twig_Extension
 
     public function currencyFilter($value, $currency)
     {
-        return $this->converter->convert($value, $currency) . ' ' . $currency;
+        return $this->formatter->formatCurrency(
+            $this->converter->convert($value, $currency),
+            $currency
+        );
     }
 }
