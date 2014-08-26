@@ -26,4 +26,11 @@ class CurrencyConverterSpec extends ObjectBehavior
     {
         $this->convert(80, 'USD')->shouldReturn(104.0);
     }
+
+    function it_throws_exception_when_currency_is_not_supported()
+    {
+        $this->shouldThrow(new \InvalidArgumentException('Currency "RSD" is not supported.'))
+            ->duringConvert(80, 'RSD')
+        ;
+    }
 }
