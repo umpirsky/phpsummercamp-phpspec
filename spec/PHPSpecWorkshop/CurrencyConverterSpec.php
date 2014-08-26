@@ -16,4 +16,9 @@ class CurrencyConverterSpec extends ObjectBehavior
     {
         $this->convert(80, 'HRK')->shouldReturn(610.4);
     }
+
+    function it_converts_non_local_currencies()
+    {
+        $this->convert(80, 'USD')->shouldReturn(104.0);
+    }
 }
