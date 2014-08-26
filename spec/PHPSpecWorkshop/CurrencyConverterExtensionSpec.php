@@ -16,4 +16,14 @@ class CurrencyConverterExtensionSpec extends ObjectBehavior
     {
         $this->shouldHaveType('Twig_Extension');
     }
+
+    function it_provides_currency_filter()
+    {
+        $filters = $this->getFilters();
+
+        $filters->shouldBeArray();
+        $filters->shouldHaveCount(1);
+        $filters[0]->shouldHaveType('Twig_SimpleFilter');
+        $filters[0]->getName()->shouldReturn('currency');
+    }
 }
