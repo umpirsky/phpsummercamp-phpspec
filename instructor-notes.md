@@ -9,6 +9,7 @@ Here's the high-level plan:
 ### Step 1
 
 - Create composer.json and install dependencies.
+- Get to know PHPSpec console.
 
 ### Step 2
 
