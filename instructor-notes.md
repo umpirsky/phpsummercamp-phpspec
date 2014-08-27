@@ -66,3 +66,11 @@ Here's the high-level plan:
 ### Step 14
 
 - Describe price filter.
+
+### Step 15
+
+- Introduce `CurrencyExchangeRateProviderInterface`.
+
+### Step 16
+
+- Introduce default `CurrencyExchangeRateProvider`.
