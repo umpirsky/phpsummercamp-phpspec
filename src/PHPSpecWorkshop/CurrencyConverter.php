@@ -4,20 +4,15 @@ namespace PHPSpecWorkshop;
 
 class CurrencyConverter implements CurrencyConverterInterface
 {
-    private $rates = [
-        'HRK' => 7.63,
-        'USD' => 1.30,
-    ];
+    private $provider;
+
+    public function __construct(CurrencyExchangeRateProviderInterface $provider)
+    {
+        $this->provider = $provider;
+    }
 
     public function convert($value, $currency)
     {
-        if (isset($this->rates[$currency])) {
-            return $value * $this->rates[$currency];
-        }
-
-        throw new \InvalidArgumentException(sprintf(
-            'Currency "%s" is not supported.',
-            $currency
-        ));
+        return $value * $this->provider->getRate($currency);
     }
 }
