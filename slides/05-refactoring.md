@@ -10,3 +10,7 @@ C) Refactor `CurrencyConverter` to make console green again!
 
 * You should have `CurrencyConverter::convert()` method that really converts currencies.
 * You should have 2 passed examples.
+
+**STUCK?**
+
+No worries: http://bit.ly/summer-phpspec

@@ -18,3 +18,7 @@ E) Run `$ ./bin/phpspec run`, green!
 **EXTRA CREDIT**
 
 Match exception message with throw matcher.
+
+**STUCK?**
+
+No worries: http://bit.ly/summer-phpspec

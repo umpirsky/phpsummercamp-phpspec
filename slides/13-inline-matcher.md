@@ -12,3 +12,7 @@ B) Make sure `$ ./bin/phpspec run` stays green.
 **EXTRA CREDIT**
 
 Implement new fun and creative inline matcher of choice.
+
+**STUCK?**
+
+No worries: http://bit.ly/summer-phpspec

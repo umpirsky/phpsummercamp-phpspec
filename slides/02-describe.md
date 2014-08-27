@@ -12,3 +12,7 @@ You should have `spec/PHPSpecWorkshop/CurrencyConverterSpec.php` file generated.
 **EXTRA CREDIT**
 
 Open parent class `ObjectBehavior` and analyze it.
+
+**STUCK?**
+
+No worries: http://bit.ly/summer-phpspec

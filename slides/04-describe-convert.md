@@ -15,3 +15,7 @@ C) Make newly created example pass.
 
 Create one more example for `convert()` method, maybe with different value or currencie.
 It fails, right? Try to generate html report from PHPSpec console, show it to your neighbor! ;)
+
+**STUCK?**
+
+No worries: http://bit.ly/summer-phpspec

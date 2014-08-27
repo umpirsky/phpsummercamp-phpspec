@@ -14,3 +14,7 @@ E) Fulfill expectations until you make console green again!
 
 * Currency filter should be functional.
 * You should have 2 specs and 9 passed examples.
+
+**STUCK?**
+
+No worries: http://bit.ly/summer-phpspec

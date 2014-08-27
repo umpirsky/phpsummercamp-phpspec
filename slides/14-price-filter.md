@@ -22,3 +22,7 @@ D) Fulfill expectations until you make console green again!
 **EXTRA CREDIT**
 
 There is more, open `Prophecy\Argument` class and check other useful methods it provides.
+
+**STUCK?**
+
+No worries: http://bit.ly/summer-phpspec

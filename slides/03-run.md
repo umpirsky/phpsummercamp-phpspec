@@ -8,3 +8,7 @@ B) Run it again with generated code.
 
 * You should have `src/PHPSpecWorkshop/CurrencyConverter.php` file generated.
 * You should have 1 passed example.
+
+**STUCK?**
+
+No worries: http://bit.ly/summer-phpspec

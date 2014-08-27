@@ -8,3 +8,7 @@ B) Fulfill expectations one by one until you make console green again!
 
 * `CurrencyConverterExtension` should provide `currency` filter.
 * You should have 2 specs and 8 passed examples.
+
+**STUCK?**
+
+No worries: http://bit.ly/summer-phpspec

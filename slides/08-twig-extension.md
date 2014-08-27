@@ -20,3 +20,7 @@ D) Iterate until you make console green again!
 **EXTRA CREDIT**
 
 Describe that currency converter extension currently have no functions and filters.
+
+**STUCK?**
+
+No worries: http://bit.ly/summer-phpspec

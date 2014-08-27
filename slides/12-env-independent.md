@@ -11,3 +11,7 @@ Make specs environment independent.
 **EXTRA CREDIT**
 
 Add new example with your native locale.
+
+**STUCK?**
+
+No worries: http://bit.ly/summer-phpspec

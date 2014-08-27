@@ -13,3 +13,7 @@ Read more about `run` and `describe` commands:
 * `$ ./bin/phpspec run --help`.
 * `$ ./bin/phpspec describe --help`.
 * Experiment with `run` output formats.
+
+**STUCK?**
+
+No worries: http://bit.ly/summer-phpspec

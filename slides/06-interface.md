@@ -14,3 +14,7 @@ E) Create `CurrencyConverterInterface` to make console green again!
 
 * You should have `CurrencyConverterInterface` and its implementation now.
 * You should have 4 passed examples.
+
+**STUCK?**
+
+No worries: http://bit.ly/summer-phpspec

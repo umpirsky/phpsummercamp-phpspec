@@ -7,3 +7,7 @@ B) Use `NumberFormatter` to fulfill expectations until you make console green ag
 **GOAL**
 
 Improved formatting in currency filter.
+
+**STUCK?**
+
+No worries: http://bit.ly/summer-phpspec
