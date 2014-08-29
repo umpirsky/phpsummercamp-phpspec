@@ -74,3 +74,7 @@ Here's the high-level plan:
 ### Step 16
 
 - Introduce default `CurrencyExchangeRateProvider`.
+
+### If there is more time
+
+- PHPSpec in practice (Sylius).
